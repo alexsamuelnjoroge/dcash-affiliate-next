@@ -1,0 +1,55 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# Bun
+.bun/
+bun.lockb
+
+# dependencies (Bun replaces this, but some tools may still generate node_modules)
+node_modules/
+
+# testing
+coverage/
+
+# next.js
+.next/
+out/
+
+# production
+build/
+
+# environment files (be careful with secrets)
+.env
+.env.*.local
+
+# debug logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# OS/misc
+.DS_Store
+*.pem
+
+# typescript
+*.tsbuildinfo
+next-env.d.ts
+
+# IDE/editor settings
+.vscode/
+.idea/
+
+# vercel (if you're deploying there)
+.vercel/
+
+# yarn (if switching from yarn to bun, remove Yarn-specific dirs)
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/versions
+
+# pnp (used by Yarn Plug’n’Play; can be removed if not applicable)
+.pnp
+.pnp.*
